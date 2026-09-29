@@ -1,0 +1,8 @@
+services:
+  dev:
+    environment:
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY:-wayland-0}
+      - XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+      - PULSE_SERVER=/mnt/wslg/PulseServer
+    volumes:
+      - /mnt/wslg:/mnt/wslg
